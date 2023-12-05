@@ -20,8 +20,6 @@
             width:auto;
         }
         #correct{
-            left: 450px;
-            top:55px;
             position: absolute;
             position:absolute;
             width: 10px;
@@ -29,15 +27,15 @@
             background-color: transparent;
             box-shadow: 3px 3px var(--num1);
             rotate:45deg;
+            translate: 73px 47px;
             
         }
         #wrong{
-            top:61px;
-            left:445px;
             position:absolute;
             width: 15px;
             height:15px;
             background-color: var(--num2);
             rotate:45deg;
             clip-path: polygon(0% 40%, 40% 40%, 40% 0%, 60% 0%,60% 40%,100% 40%, 100% 60%, 60% 60%, 60% 100%, 40% 100%, 40% 60%, 0% 60%);
+            translate: 72px 54px;
         }
