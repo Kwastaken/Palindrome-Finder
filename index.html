@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="title">PALINDROME DETECTOR</div>
+    <input id="enter" type="string" >
+    <div id="correct"></div>
+    <div id="wrong"></div>
+    <script>
+    function palindromedetector(){
+    let root = document.querySelector(':root');
+    let word=document.getElementById("enter").value;
+    if(word.length==0){
+            root.style.setProperty('--num1','transparent');
+            root.style.setProperty('--num2','transparent');
+            return;
+        }
+    for(let i=word.length-1; i>-1; i--){
+        if (word.charAt(word.length-i-1)==word.charAt(i)){
+            root.style.setProperty('--num1','green');
+            root.style.setProperty('--num2','transparent');
+        }
+        else{
+            root.style.setProperty('--num2','red');
+            root.style.setProperty('--num1','transparent');
+            return;
+        }
+            }
+        }
+    document.getElementById("enter").addEventListener("input",() => {palindromedetector();});
+        </script>
+</body>
+</html

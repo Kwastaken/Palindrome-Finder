@@ -1,0 +1,43 @@
+        :root{
+         --num1:transparent;
+         --num2:transparent;
+        }
+        html,body{
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            background:linear-gradient(to bottom right ,rgb(0, 161, 161) 0%, rgb(60, 174, 148) 100%);
+            width: 100%;
+            height:100%;
+            background-repeat: no-repeat;
+        }
+        #title{
+            position:relative;
+            font-size:200%;
+            height: 50px;
+        }
+        input{
+            width:auto;
+        }
+        #correct{
+            left: 450px;
+            top:55px;
+            position: absolute;
+            position:absolute;
+            width: 10px;
+            height:15px;
+            background-color: transparent;
+            box-shadow: 3px 3px var(--num1);
+            rotate:45deg;
+            
+        }
+        #wrong{
+            top:61px;
+            left:445px;
+            position:absolute;
+            width: 15px;
+            height:15px;
+            background-color: var(--num2);
+            rotate:45deg;
+            clip-path: polygon(0% 40%, 40% 40%, 40% 0%, 60% 0%,60% 40%,100% 40%, 100% 60%, 60% 60%, 60% 100%, 40% 100%, 40% 60%, 0% 60%);
+        }
